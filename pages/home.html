@@ -481,7 +481,6 @@ var xhrGetPool = $.ajax({
 							'<td>' + tx.size + '</td>' +
 							'<td>' + tx.hash + '</td><tr>';
 					$(txsRows).append(columns);
-					$(row).find('.mtx-ago').timeago('update', new Date(timestamp * 1000).toISOString());
 				});
 				updateText('mempool_count', document.querySelectorAll('#mem_pool_rows tr').length);
 			}
