@@ -479,7 +479,7 @@ var xhrGetPool = $.ajax({
 							'<tr><td>' + getReadableCoins(tx.amount_out, 4, true) + '</td>' +
 							'<td>' + getReadableCoins(tx.fee, 4, true) + '</td>' +
 							'<td>' + tx.size + '</td>' +
-							'<td>' + tx.hash + '</td><tr>';
+							'<td>' + tx.hash + '</td></tr>';
 					$(txsRows).append(columns);
 				});
 				updateText('mempool_count', document.querySelectorAll('#mem_pool_rows tr').length);
